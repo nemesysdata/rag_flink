@@ -31,7 +31,7 @@ async def health_check():
     return {"status": "healthy"}
 
 def run_api():
-    uvicorn.run(app, host="0.0.0.0", port=5000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 class PDFProcessor:
     def __init__(self):
@@ -164,6 +164,9 @@ class PDFProcessor:
                 'text': text
             }
 
+            # Flag para controlar se a mensagem foi enviada com sucesso
+            message_sent = False
+
             # Envia para o tópico pdf_baixado usando o ID como chave
             try:
                 self.producer.produce(
@@ -175,7 +178,10 @@ class PDFProcessor:
                     ),
                     on_delivery=self.delivery_report
                 )
-                self.producer.poll(0)
+                
+                # Aguarda a confirmação do envio
+                self.producer.flush(timeout=10)
+                message_sent = True
                 logger.info(f"Mensagem enviada para pdf_baixado com ID: {doc_id}")
             except Exception as e:
                 logger.error(f"Erro ao enviar mensagem para pdf_baixado: {str(e)}")
@@ -185,15 +191,22 @@ class PDFProcessor:
                     'url': url,
                     'timestamp': int(time.time() * 1000)
                 }
-                self.producer.produce(
-                    topic=self.error_topic,
-                    value=self.string_serializer(json.dumps(error_msg)),
-                    on_delivery=self.delivery_report
-                )
-                self.producer.poll(0)
+                try:
+                    self.producer.produce(
+                        topic=self.error_topic,
+                        value=self.string_serializer(json.dumps(error_msg)),
+                        on_delivery=self.delivery_report
+                    )
+                    self.producer.flush(timeout=5)
+                except Exception as error_e:
+                    logger.error(f"Erro ao enviar mensagem de erro: {str(error_e)}")
 
-            # Commit da mensagem
-            self.consumer.commit(msg)
+            # Só faz o commit se a mensagem foi enviada com sucesso
+            if message_sent:
+                self.consumer.commit(msg)
+                logger.info(f"Commit realizado para mensagem com ID: {doc_id}")
+            else:
+                logger.warning(f"Não foi possível fazer o commit da mensagem com ID: {doc_id}")
 
         except Exception as e:
             logger.error(f"Erro ao processar mensagem: {str(e)}")
@@ -203,12 +216,15 @@ class PDFProcessor:
                 'url': url if 'url' in locals() else 'unknown',
                 'timestamp': int(time.time() * 1000)
             }
-            self.producer.produce(
-                topic=self.error_topic,
-                value=self.string_serializer(json.dumps(error_msg)),
-                on_delivery=self.delivery_report
-            )
-            self.producer.poll(0)
+            try:
+                self.producer.produce(
+                    topic=self.error_topic,
+                    value=self.string_serializer(json.dumps(error_msg)),
+                    on_delivery=self.delivery_report
+                )
+                self.producer.flush(timeout=5)
+            except Exception as error_e:
+                logger.error(f"Erro ao enviar mensagem de erro: {str(error_e)}")
 
     def delivery_report(self, err, msg):
         """Callback para relatório de entrega de mensagens"""
