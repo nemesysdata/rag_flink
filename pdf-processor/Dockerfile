@@ -1,30 +1,33 @@
-FROM python:3.13-slim
+FROM python:3.12-slim
 
-# Install system dependencies
+# Instala dependências do sistema
 RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Poetry
+# Instala o Poetry
 RUN pip install poetry
 
-# Configure Poetry
+# Configura o Poetry para não criar ambientes virtuais
 RUN poetry config virtualenvs.create false
 
-# Set working directory
+# Define o diretório de trabalho
 WORKDIR /app
 
-# Copy project files
+# Copia os arquivos de dependências
 COPY pyproject.toml poetry.lock ./
 
-# Install dependencies
+# Instala as dependências
 RUN poetry install --without dev --no-interaction --no-ansi --no-root
 
-# Copy application code
+# Copia o código da aplicação
 COPY src/ ./src/
 
-# Expose port for health check
-EXPOSE 5000
+# Expõe a porta 8080 para o Cloud Run
+EXPOSE 8080
 
-# Run the application
+# Define a variável de ambiente PORT
+ENV PORT=8080
+
+# Comando para executar a aplicação
 CMD ["python", "src/main.py"] 
