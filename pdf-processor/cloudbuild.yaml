@@ -1,0 +1,37 @@
+steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA', '.']
+
+  # Push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA']
+
+  # Deploy container image to Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'pdf-processor'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA'
+      - '--region'
+      - 'us-central1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--set-env-vars'
+      - >-
+        KAFKA_BOOTSTRAP_SERVERS=${_KAFKA_BOOTSTRAP_SERVERS},
+        KAFKA_API_KEY=${_KAFKA_API_KEY},
+        KAFKA_API_SECRET=${_KAFKA_API_SECRET},
+        SCHEMA_REGISTRY_URL=${_SCHEMA_REGISTRY_URL},
+        SCHEMA_REGISTRY_API_KEY=${_SCHEMA_REGISTRY_API_KEY},
+        SCHEMA_REGISTRY_API_SECRET=${_SCHEMA_REGISTRY_API_SECRET},
+        KAFKA_INPUT_TOPIC=pdf_download,
+        KAFKA_OUTPUT_TOPIC=conteudo_pdf,
+        KAFKA_ERROR_TOPIC=pdf_processor_errors,
+        KAFKA_CONSUMER_GROUP=pdf-processor-group
+
+images:
+  - 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA' 

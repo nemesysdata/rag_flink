@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "namespace": "co.techrom.poc_rag",
+  "name": "pdf_completo",
+  "doc": "PDF completo que foi baixado",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "ID do documento HASH 256 calculado a partir da URL"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "doc": "URL de onde o documento foi baixado"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "doc": "O texto extraído do documento"
+    }
+  ]
+} 

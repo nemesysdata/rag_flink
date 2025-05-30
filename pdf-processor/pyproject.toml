@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pdf-processor"
+version = "0.1.0"
+description = "Service to process PDFs from Kafka and extract their content"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+confluent-kafka = {extras = ["avro", "serialization"], version = "^2.10.0"}
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+PyPDF2 = "^3.0.0"
+avro-python3 = "^1.10.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+black = "^23.0"
+isort = "^5.0"
+flake8 = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 

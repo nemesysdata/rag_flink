@@ -1,0 +1,47 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# GCP Cloud Run Project Structure
+
+This project contains multiple GCP Cloud Run services, each organized in its own directory. Each service directory follows a consistent structure to maintain organization and best practices.
+
+## Directory Structure
+
+Each Cloud Run service directory should contain:
+
+- `src/` - Source code for the service
+- `Dockerfile` - Container definition for the service
+- `cloudbuild.yaml` - Cloud Build configuration
+- `README.md` - Service-specific documentation
+- `requirements.txt` or `package.json` - Dependencies
+- `.env.example` - Example environment variables
+
+## Best Practices
+
+1. Each service should be self-contained and independently deployable
+2. Use environment variables for configuration
+3. Include proper logging and monitoring
+4. Follow security best practices
+5. Include proper documentation
+
+## Deployment
+
+Each service can be deployed independently using Cloud Run. The deployment process is automated through Cloud Build using the `cloudbuild.yaml` configuration.
+
+## Common Patterns
+
+- Use environment variables for configuration
+- Implement health checks
+- Set up proper IAM roles and permissions
+- Configure appropriate resource limits
+- Implement proper error handling and logging
+
+## Development Workflow
+
+1. Create a new directory for each service
+2. Follow the standard directory structure
+3. Implement the service logic
+4. Test locally using Docker
+5. Deploy to Cloud Run using Cloud Build

@@ -1,0 +1,171 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Environment and Kafka Configuration Standards
+
+All services must use environment variables for configuration and connect to Confluent Cloud Kafka. This ensures secure and flexible configuration management across all services.
+
+## Environment Configuration
+
+Each service must include:
+
+- `.env.example` - Template for environment variables
+- `.env` - Local development environment variables (git-ignored)
+- `.env.prod` - Production environment variables (git-ignored)
+
+### Required Environment Variables
+
+```bash
+# Service Configuration
+SERVICE_NAME=my-service
+SERVICE_PORT=8080
+ENVIRONMENT=development
+
+# Confluent Cloud Kafka Configuration
+KAFKA_BOOTSTRAP_SERVERS=pkc-xxxxx.region.provider.confluent.cloud:9092
+KAFKA_API_KEY=your-api-key
+KAFKA_API_SECRET=your-api-secret
+KAFKA_SECURITY_PROTOCOL=SASL_SSL
+KAFKA_SASL_MECHANISM=PLAIN
+KAFKA_SASL_USERNAME=${KAFKA_API_KEY}
+KAFKA_SASL_PASSWORD=${KAFKA_API_SECRET}
+
+# Topic Names
+KAFKA_INPUT_TOPIC=input-topic
+KAFKA_OUTPUT_TOPIC=output-topic
+KAFKA_ERROR_TOPIC=error-topic
+
+# Consumer Group
+KAFKA_CONSUMER_GROUP=my-service-group
+```
+
+## Environment File Structure
+
+1. `.env.example`:
+```bash
+# Copy this file to .env and fill in the values
+SERVICE_NAME=
+SERVICE_PORT=
+ENVIRONMENT=
+
+KAFKA_BOOTSTRAP_SERVERS=
+KAFKA_API_KEY=
+KAFKA_API_SECRET=
+KAFKA_SECURITY_PROTOCOL=SASL_SSL
+KAFKA_SASL_MECHANISM=PLAIN
+KAFKA_SASL_USERNAME=${KAFKA_API_KEY}
+KAFKA_SASL_PASSWORD=${KAFKA_API_SECRET}
+
+KAFKA_INPUT_TOPIC=
+KAFKA_OUTPUT_TOPIC=
+KAFKA_ERROR_TOPIC=
+
+KAFKA_CONSUMER_GROUP=
+```
+
+## Environment Loading
+
+Use python-dotenv to load environment variables:
+
+```python
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
+
+# Access environment variables
+service_name = os.getenv("SERVICE_NAME")
+kafka_bootstrap_servers = os.getenv("KAFKA_BOOTSTRAP_SERVERS")
+```
+
+## Kafka Configuration
+
+### Producer Configuration
+
+```python
+from confluent_kafka import Producer
+
+producer_config = {
+    'bootstrap.servers': os.getenv('KAFKA_BOOTSTRAP_SERVERS'),
+    'security.protocol': os.getenv('KAFKA_SECURITY_PROTOCOL'),
+    'sasl.mechanisms': os.getenv('KAFKA_SASL_MECHANISM'),
+    'sasl.username': os.getenv('KAFKA_SASL_USERNAME'),
+    'sasl.password': os.getenv('KAFKA_SASL_PASSWORD')
+}
+
+producer = Producer(producer_config)
+```
+
+### Consumer Configuration
+
+```python
+from confluent_kafka import Consumer
+
+consumer_config = {
+    'bootstrap.servers': os.getenv('KAFKA_BOOTSTRAP_SERVERS'),
+    'security.protocol': os.getenv('KAFKA_SECURITY_PROTOCOL'),
+    'sasl.mechanisms': os.getenv('KAFKA_SASL_MECHANISM'),
+    'sasl.username': os.getenv('KAFKA_SASL_USERNAME'),
+    'sasl.password': os.getenv('KAFKA_SASL_PASSWORD'),
+    'group.id': os.getenv('KAFKA_CONSUMER_GROUP'),
+    'auto.offset.reset': 'earliest'
+}
+
+consumer = Consumer(consumer_config)
+```
+
+## Best Practices
+
+1. Never commit `.env` files to version control
+2. Always include `.env.example` with all required variables
+3. Use descriptive variable names
+4. Group related variables together
+5. Document any non-obvious variable usage
+6. Use environment-specific files for different deployments
+7. Validate environment variables on service startup
+
+## Security Considerations
+
+1. Rotate Kafka API keys regularly
+2. Use different API keys for different environments
+3. Implement proper error handling for missing variables
+4. Use secure protocols (SASL_SSL) for Kafka connections
+5. Implement proper authentication and authorization
+
+## Error Handling
+
+```python
+def validate_environment():
+    required_vars = [
+        'SERVICE_NAME',
+        'KAFKA_BOOTSTRAP_SERVERS',
+        'KAFKA_API_KEY',
+        'KAFKA_API_SECRET'
+    ]
+    
+    missing_vars = [var for var in required_vars if not os.getenv(var)]
+    
+    if missing_vars:
+        raise EnvironmentError(
+            f"Missing required environment variables: {', '.join(missing_vars)}"
+        )
+```
+
+## Cloud Run Integration
+
+When deploying to Cloud Run, set environment variables in the deployment configuration:
+
+```yaml
+# cloudbuild.yaml
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - '${_SERVICE_NAME}'
+      - '--set-env-vars'
+      - 'KAFKA_BOOTSTRAP_SERVERS=${_KAFKA_BOOTSTRAP_SERVERS},KAFKA_API_KEY=${_KAFKA_API_KEY},KAFKA_API_SECRET=${_KAFKA_API_SECRET}'
+```

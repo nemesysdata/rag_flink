@@ -1,0 +1,29 @@
+steps:
+  # Build da imagem do pdf-processor
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA', './pdf-processor']
+    id: 'build-pdf-processor'
+
+  # Push da imagem para o Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA']
+    waitFor: ['build-pdf-processor']
+
+  # Deploy no Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'pdf-processor'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA'
+      - '--region'
+      - 'us-central1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+    waitFor: ['build-pdf-processor']
+
+images:
+  - 'gcr.io/$PROJECT_ID/pdf-processor:$COMMIT_SHA' 
