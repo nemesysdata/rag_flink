@@ -23,5 +23,8 @@ RUN poetry install --without dev --no-interaction --no-ansi --no-root
 # Copy application code
 COPY src/ ./src/
 
+# Expose port for health check
+EXPOSE 5000
+
 # Run the application
 CMD ["python", "src/main.py"] 

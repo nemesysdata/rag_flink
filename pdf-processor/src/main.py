@@ -2,6 +2,7 @@ import os
 import json
 import hashlib
 import logging
+import threading
 from typing import Dict, Any
 from dotenv import load_dotenv
 from confluent_kafka import Consumer, Producer, KafkaError
@@ -12,6 +13,7 @@ import requests
 from io import BytesIO
 from PyPDF2 import PdfReader
 import time
+from flask import Flask
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
@@ -19,6 +21,16 @@ logger = logging.getLogger(__name__)
 
 # Carrega variáveis de ambiente
 load_dotenv()
+
+# Inicializa o Flask
+app = Flask(__name__)
+
+@app.route('/health', methods=['GET'])
+def health_check():
+    return {'status': 'healthy'}, 200
+
+def run_flask():
+    app.run(host='0.0.0.0', port=5000)
 
 class PDFProcessor:
     def __init__(self):
@@ -226,5 +238,11 @@ class PDFProcessor:
             self.producer.flush()
 
 if __name__ == "__main__":
+    # Inicia o Flask em uma thread separada
+    flask_thread = threading.Thread(target=run_flask)
+    flask_thread.daemon = True
+    flask_thread.start()
+
+    # Inicia o processador de PDFs
     processor = PDFProcessor()
     processor.run() 
