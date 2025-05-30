@@ -13,7 +13,8 @@ import requests
 from io import BytesIO
 from PyPDF2 import PdfReader
 import time
-from flask import Flask
+from fastapi import FastAPI
+import uvicorn
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
@@ -22,15 +23,15 @@ logger = logging.getLogger(__name__)
 # Carrega variáveis de ambiente
 load_dotenv()
 
-# Inicializa o Flask
-app = Flask(__name__)
+# Inicializa o FastAPI
+app = FastAPI(title="PDF Processor Service")
 
-@app.route('/health', methods=['GET'])
-def health_check():
-    return {'status': 'healthy'}, 200
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
 
-def run_flask():
-    app.run(host='0.0.0.0', port=5000)
+def run_api():
+    uvicorn.run(app, host="0.0.0.0", port=5000)
 
 class PDFProcessor:
     def __init__(self):
@@ -238,10 +239,10 @@ class PDFProcessor:
             self.producer.flush()
 
 if __name__ == "__main__":
-    # Inicia o Flask em uma thread separada
-    flask_thread = threading.Thread(target=run_flask)
-    flask_thread.daemon = True
-    flask_thread.start()
+    # Inicia o FastAPI em uma thread separada
+    api_thread = threading.Thread(target=run_api)
+    api_thread.daemon = True
+    api_thread.start()
 
     # Inicia o processador de PDFs
     processor = PDFProcessor()
