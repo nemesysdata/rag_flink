@@ -49,34 +49,10 @@ async def health_check():
         status_code=200
     )
 
-def run_api():
-    """Executa o servidor FastAPI com configurações otimizadas"""
-    port = int(os.getenv('PORT', 8080))
-    
-    # Configuração otimizada do Uvicorn
-    config = uvicorn.Config(
-        app=app,
-        host="0.0.0.0",
-        port=port,
-        workers=1,  # Usando 1 worker pois já estamos usando multiprocessing
-        loop="uvloop",  # Usa uvloop para melhor performance
-        http="httptools",  # Usa httptools para melhor performance
-        log_level="info",
-        access_log=False,  # Desabilita logs de acesso para melhor performance
-        timeout_keep_alive=5,  # Reduz o timeout de keep-alive
-        limit_concurrency=1000,  # Aumenta o limite de conexões concorrentes
-        backlog=2048,  # Aumenta o backlog de conexões
-        proxy_headers=True,
-        server_header=False,  # Desabilita o header do servidor
-        date_header=False,  # Desabilita o header de data
-    )
-    
-    # Configuração de logging otimizada
-    LOGGING_CONFIG["formatters"]["access"]["fmt"] = '%(asctime)s - %(levelname)s - %(message)s'
-    LOGGING_CONFIG["formatters"]["default"]["fmt"] = '%(asctime)s - %(levelname)s - %(message)s'
-    
-    server = uvicorn.Server(config)
-    server.run()
+def run_processor():
+    """Executa o processador de PDFs em um processo separado"""
+    processor = PDFProcessor()
+    processor.run()
 
 class PDFProcessor:
     def __init__(self):
@@ -326,16 +302,36 @@ class PDFProcessor:
             if self._producer:
                 self.producer.flush(timeout=1.0)
 
-def run_processor():
-    """Função para executar o processador em um processo separado"""
-    processor = PDFProcessor()
-    processor.run()
-
 if __name__ == "__main__":
-    # Inicia o FastAPI em um processo separado
-    api_process = multiprocessing.Process(target=run_api)
-    api_process.daemon = True
-    api_process.start()
+    # Inicia o processador de PDFs em um processo separado
+    processor_process = multiprocessing.Process(target=run_processor)
+    processor_process.daemon = True
+    processor_process.start()
 
-    # Inicia o processador de PDFs no processo principal
-    run_processor() 
+    # Inicia o FastAPI na thread principal
+    port = int(os.getenv('PORT', 8080))
+    
+    # Configuração otimizada do Uvicorn
+    config = uvicorn.Config(
+        app=app,
+        host="0.0.0.0",
+        port=port,
+        workers=1,  # Usando 1 worker pois já estamos usando multiprocessing
+        loop="uvloop",  # Usa uvloop para melhor performance
+        http="httptools",  # Usa httptools para melhor performance
+        log_level="info",
+        access_log=False,  # Desabilita logs de acesso para melhor performance
+        timeout_keep_alive=5,  # Reduz o timeout de keep-alive
+        limit_concurrency=1000,  # Aumenta o limite de conexões concorrentes
+        backlog=2048,  # Aumenta o backlog de conexões
+        proxy_headers=True,
+        server_header=False,  # Desabilita o header do servidor
+        date_header=False,  # Desabilita o header de data
+    )
+    
+    # Configuração de logging otimizada
+    LOGGING_CONFIG["formatters"]["access"]["fmt"] = '%(asctime)s - %(levelname)s - %(message)s'
+    LOGGING_CONFIG["formatters"]["default"]["fmt"] = '%(asctime)s - %(levelname)s - %(message)s'
+    
+    server = uvicorn.Server(config)
+    server.run() 
