@@ -6,12 +6,20 @@ Projeto de processamento de documentos PDF usando Apache Kafka e Google Cloud Ru
 
 ```
 rag_flink/
-├── pdf-processor/           # Serviço de processamento de PDFs
-│   ├── src/                # Código fonte
-│   ├── Dockerfile         # Configuração do container
-│   ├── pyproject.toml     # Dependências Python
-│   └── .env              # Variáveis de ambiente
-└── cloudbuild.yaml        # Configuração do Cloud Build
+├── pdf_processor/          # Serviço de processamento de PDFs
+│   ├── main.py            # Ponto de entrada do serviço
+│   ├── pdf_processor.py   # Lógica de processamento
+│   └── schemas/           # Schemas Avro
+├── extrair_chunks_pdf/    # Serviço de extração de chunks
+│   ├── main.py           # Ponto de entrada do serviço
+│   └── chunks_processor.py # Lógica de processamento
+├── shared/                # Módulos compartilhados
+│   ├── kafka_config.py    # Configuração do Kafka
+│   ├── topic_config.py    # Configuração dos tópicos
+│   └── logging_config.py  # Configuração de logs
+├── scripts/               # Scripts utilitários
+├── main.py               # Ponto de entrada principal
+└── pyproject.toml        # Dependências do projeto
 ```
 
 ## Serviços
@@ -19,16 +27,25 @@ rag_flink/
 ### PDF Processor
 
 Serviço responsável por:
-- Monitorar um tópico Kafka para URLs de PDFs
+- Monitorar o tópico `pdf_download` para URLs de PDFs
 - Fazer download dos PDFs
 - Extrair o texto dos documentos
-- Publicar o conteúdo em um novo tópico Kafka
+- Publicar o conteúdo no tópico `pdf_baixado`
+
+### Chunks Processor
+
+Serviço responsável por:
+- Monitorar o tópico `pdf_baixado` para textos extraídos
+- Dividir o texto em chunks de 1000 caracteres com overlap de 200
+- Publicar os chunks no tópico `pdf_chunks`
 
 #### Tecnologias Utilizadas
 - Python 3.12
 - Apache Kafka
 - Confluent Schema Registry
 - PyPDF2
+- LangChain
+- Google Gemini
 - Poetry (gerenciamento de dependências)
 - Docker
 - Google Cloud Run
@@ -37,32 +54,37 @@ Serviço responsável por:
 
 1. **Variáveis de Ambiente**:
    ```env
+   # Kafka
    KAFKA_BOOTSTRAP_SERVERS=
    KAFKA_API_KEY=
    KAFKA_API_SECRET=
-   KAFKA_INPUT_TOPIC=
-   KAFKA_OUTPUT_TOPIC=
-   KAFKA_ERROR_TOPIC=
    KAFKA_CONSUMER_GROUP=
+   
+   # Schema Registry
    SCHEMA_REGISTRY_URL=
    SCHEMA_REGISTRY_API_KEY=
    SCHEMA_REGISTRY_API_SECRET=
+   
+   # Google Gemini
+   GOOGLE_API_KEY=
    ```
 
-2. **Schemas Avro**:
-   - `pdf_completo.avsc`: Schema para o conteúdo extraído dos PDFs
+2. **Tópicos Kafka**:
+   - `pdf_download`: URLs de PDFs para processamento
+   - `pdf_baixado`: Textos extraídos dos PDFs
+   - `pdf_chunks`: Chunks de texto processados
+   - `pdf_errors`: Mensagens de erro
 
 #### Desenvolvimento Local
 
 1. Instalar dependências:
    ```bash
-   cd pdf-processor
    poetry install
    ```
 
-2. Executar o serviço:
+2. Executar os serviços:
    ```bash
-   poetry run python src/main.py
+   poetry run python main.py
    ```
 
 #### Deploy
