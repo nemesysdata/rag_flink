@@ -13,10 +13,6 @@ import requests
 from io import BytesIO
 from PyPDF2 import PdfReader
 import time
-from fastapi import FastAPI, Response
-from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
-from uvicorn.config import LOGGING_CONFIG
 
 # Configuração de logging
 logging.basicConfig(level=logging.INFO)
@@ -24,30 +20,6 @@ logger = logging.getLogger(__name__)
 
 # Carrega variáveis de ambiente
 load_dotenv()
-
-# Inicializa o FastAPI
-app = FastAPI(
-    title="PDF Processor Service",
-    docs_url=None,  # Desabilita Swagger UI
-    redoc_url=None  # Desabilita ReDoc
-)
-
-# Configuração de CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-@app.get("/health")
-async def health_check():
-    return Response(
-        content='{"status":"healthy"}',
-        media_type="application/json",
-        status_code=200
-    )
 
 def run_processor():
     """Executa o processador de PDFs em um processo separado"""
@@ -306,32 +278,4 @@ if __name__ == "__main__":
     # Inicia o processador de PDFs em um processo separado
     processor_process = multiprocessing.Process(target=run_processor)
     processor_process.daemon = True
-    processor_process.start()
-
-    # Inicia o FastAPI na thread principal
-    port = int(os.getenv('PORT', 8080))
-    
-    # Configuração otimizada do Uvicorn
-    config = uvicorn.Config(
-        app=app,
-        host="0.0.0.0",
-        port=port,
-        workers=1,  # Usando 1 worker pois já estamos usando multiprocessing
-        loop="uvloop",  # Usa uvloop para melhor performance
-        http="httptools",  # Usa httptools para melhor performance
-        log_level="info",
-        access_log=False,  # Desabilita logs de acesso para melhor performance
-        timeout_keep_alive=5,  # Reduz o timeout de keep-alive
-        limit_concurrency=1000,  # Aumenta o limite de conexões concorrentes
-        backlog=2048,  # Aumenta o backlog de conexões
-        proxy_headers=True,
-        server_header=False,  # Desabilita o header do servidor
-        date_header=False,  # Desabilita o header de data
-    )
-    
-    # Configuração de logging otimizada
-    LOGGING_CONFIG["formatters"]["access"]["fmt"] = '%(asctime)s - %(levelname)s - %(message)s'
-    LOGGING_CONFIG["formatters"]["default"]["fmt"] = '%(asctime)s - %(levelname)s - %(message)s'
-    
-    server = uvicorn.Server(config)
-    server.run() 
+    processor_process.start() 

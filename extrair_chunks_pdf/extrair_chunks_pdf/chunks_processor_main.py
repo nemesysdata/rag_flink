@@ -11,11 +11,8 @@ from confluent_kafka.schema_registry.avro import AvroSerializer, AvroDeserialize
 from confluent_kafka.serialization import StringSerializer, SerializationContext, MessageField
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import ChatGoogleGenerativeAI
-from fastapi import FastAPI, Response
-from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
 
-from shared import KafkaConfig, create_app, setup_logging
+from shared import KafkaConfig, setup_logging
 
 # Configuração de logging
 setup_logging()
@@ -23,17 +20,6 @@ logger = logging.getLogger(__name__)
 
 # Carrega variáveis de ambiente
 load_dotenv()
-
-# Inicializa o FastAPI
-app = create_app(title="PDF Chunks Extractor Service")
-
-@app.get("/health")
-async def health_check():
-    return Response(
-        content='{"status":"healthy"}',
-        media_type="application/json",
-        status_code=200
-    )
 
 def run_processor():
     """Executa o processador de chunks em um processo separado"""
@@ -268,7 +254,4 @@ class ChunksProcessor:
 if __name__ == "__main__":
     # Inicia o processador Kafka em uma thread separada
     kafka_thread = threading.Thread(target=run_processor, daemon=True)
-    kafka_thread.start()
-    
-    # Inicia o servidor FastAPI
-    uvicorn.run(app, host="0.0.0.0", port=8080) 
+    kafka_thread.start() 
