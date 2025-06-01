@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from shared import setup_logging
-from pdf_processor.pdf_processor import PDFProcessor
-from extrair_chunks_pdf.chunks_processor import ChunksProcessor
+from pdf_processor.pdf_processor.pdf_processor import PDFProcessor
+from extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor import ChunksProcessor
 
 def run_pdf_processor():
     """Executa o processador de PDFs"""
