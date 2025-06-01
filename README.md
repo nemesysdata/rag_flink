@@ -8,17 +8,23 @@ Projeto de processamento de documentos PDF usando Apache Kafka e Google Cloud Ru
 rag_flink/
 ├── pdf_processor/          # Serviço de processamento de PDFs
 │   ├── pdf_processor/     # Módulo do processador
-│   │   ├── pdf_processor_main.py   # Lógica de processamento
+│   │   ├── __init__.py
+│   │   ├── pdf_processor.py # Lógica de processamento
+│   │   └── pdf_processor_main.py # Ponto de entrada
 │   │   └── schemas/       # Schemas Avro
 ├── extrair_chunks_pdf/    # Serviço de extração de chunks
 │   ├── extrair_chunks_pdf/ # Módulo do processador
-│   │   ├── chunks_processor_main.py # Lógica de processamento
+│   │   ├── __init__.py
+│   │   └── chunks_processor.py # Lógica de processamento e ponto de entrada
 │   │   └── schemas/       # Schemas Avro
 ├── shared/                # Módulos compartilhados
+│   ├── __init__.py
 │   ├── kafka_config.py    # Configuração do Kafka
 │   ├── topic_config.py    # Configuração dos tópicos
 │   └── logging_config.py  # Configuração de logs
 ├── scripts/               # Scripts utilitários
+│   ├── create_topics.py # Script para criar tópicos
+│   └── setup_env.py # Script para configurar ambiente
 ├── main.py               # Ponto de entrada principal
 ├── api_server.py         # Servidor FastAPI centralizado
 └── pyproject.toml        # Dependências do projeto
@@ -220,7 +226,7 @@ Servidor FastAPI centralizado responsável por:
    poetry run python pdf_processor/pdf_processor/pdf_processor_main.py
 
    # Apenas o processador de chunks
-   poetry run python extrair_chunks_pdf/extrair_chunks_pdf/chunks_processor_main.py
+   poetry run python extrair_chunks_pdf/extrair_chunks_pdf/chunks_processor.py
    ```
 
 #### Deploy

@@ -2447,3 +2447,1142 @@
 2025-06-01 15:48:09.493 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:198 - Iniciando processador de chunks...
 2025-06-01 15:48:09.519 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:55 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
 2025-06-01 15:48:43.606 | INFO     | __main__:main:79 - Encerrando aplicação...
+2025-06-01 16:13:51.027 | INFO     | __main__:main:34 - Iniciando aplicação...
+2025-06-01 16:13:51.028 | INFO     | __main__:main:42 - Iniciando processadores e API...
+2025-06-01 16:13:52.518 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:191 - Iniciando processador de PDFs...
+2025-06-01 16:13:52.523 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:__init__:34 - Modelo Gemini e Text Splitter configurados
+2025-06-01 16:13:52.523 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:198 - Iniciando processador de chunks...
+2025-06-01 16:13:52.687 | INFO     | pdf_processor.pdf_processor.pdf_processor:consumer:39 - Consumer Kafka inicializado e inscrito no tópico pdf_download
+2025-06-01 16:13:52.687 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:55 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
+2025-06-01 16:14:29.392 | INFO     | __main__:main:53 - Encerrando aplicação...
+2025-06-01 16:14:29.807 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:207 - Encerrando processador de chunks...
+2025-06-01 16:14:29.807 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:200 - Encerrando processador de PDFs...
+2025-06-01 16:14:29.807 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:209 - Fechando conexões...
+2025-06-01 16:14:29.807 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:202 - Fechando conexões...
+2025-06-01 16:14:29.971 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:212 - Conexões fechadas
+2025-06-01 16:14:29.971 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:205 - Conexões fechadas
+2025-06-01 16:17:32.498 | INFO     | __main__:main:61 - Iniciando aplicação...
+2025-06-01 16:17:32.498 | INFO     | __main__:main:72 - Iniciando processadores e API...
+2025-06-01 16:17:33.895 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:191 - Iniciando processador de PDFs...
+2025-06-01 16:17:33.898 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:__init__:34 - Modelo Gemini e Text Splitter configurados
+2025-06-01 16:17:33.898 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:198 - Iniciando processador de chunks...
+2025-06-01 16:17:33.977 | INFO     | pdf_processor.pdf_processor.pdf_processor:consumer:39 - Consumer Kafka inicializado e inscrito no tópico pdf_download
+2025-06-01 16:17:33.977 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:55 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
+2025-06-01 16:17:47.057 | INFO     | __main__:signal_handler:39 - Sinal de encerramento recebido. Aguardando processos...
+2025-06-01 16:17:47.432 | INFO     | __main__:signal_handler:53 - Aplicação encerrada.
+2025-06-01 16:18:33.496 | INFO     | __main__:main:61 - Iniciando aplicação...
+2025-06-01 16:18:33.496 | INFO     | __main__:main:72 - Iniciando processadores e API...
+2025-06-01 16:18:34.804 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:191 - Iniciando processador de PDFs...
+2025-06-01 16:18:34.806 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:__init__:34 - Modelo Gemini e Text Splitter configurados
+2025-06-01 16:18:34.806 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:198 - Iniciando processador de chunks...
+2025-06-01 16:18:34.873 | INFO     | pdf_processor.pdf_processor.pdf_processor:consumer:39 - Consumer Kafka inicializado e inscrito no tópico pdf_download
+2025-06-01 16:18:34.874 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:55 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
+2025-06-01 16:19:52.579 | INFO     | __main__:signal_handler:39 - Sinal de encerramento recebido. Aguardando processos...
+2025-06-01 16:19:52.942 | INFO     | __main__:signal_handler:53 - Aplicação encerrada.
+2025-06-01 16:33:30.965 | INFO     | __main__:main:61 - Iniciando aplicação...
+2025-06-01 16:33:30.965 | INFO     | __main__:main:72 - Iniciando processadores e API...
+2025-06-01 16:33:32.318 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:__init__:34 - Modelo Gemini e Text Splitter configurados
+2025-06-01 16:33:32.318 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:198 - Iniciando processador de chunks...
+2025-06-01 16:33:32.320 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:191 - Iniciando processador de PDFs...
+2025-06-01 16:33:32.427 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:55 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
+2025-06-01 16:33:32.427 | INFO     | pdf_processor.pdf_processor.pdf_processor:consumer:39 - Consumer Kafka inicializado e inscrito no tópico pdf_download
+2025-06-01 16:37:12.973 | INFO     | __main__:signal_handler:39 - Sinal de encerramento recebido. Aguardando processos...
+2025-06-01 16:37:13.290 | INFO     | __main__:signal_handler:53 - Aplicação encerrada.
+2025-06-01 16:38:14.484 | INFO     | __main__:main:61 - Iniciando aplicação...
+2025-06-01 16:38:14.485 | INFO     | __main__:main:72 - Iniciando processadores e API...
+2025-06-01 16:38:15.907 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:191 - Iniciando processador de PDFs...
+2025-06-01 16:38:15.908 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:__init__:34 - Modelo Gemini e Text Splitter configurados
+2025-06-01 16:38:15.909 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:198 - Iniciando processador de chunks...
+2025-06-01 16:38:15.982 | INFO     | pdf_processor.pdf_processor.pdf_processor:consumer:39 - Consumer Kafka inicializado e inscrito no tópico pdf_download
+2025-06-01 16:38:15.982 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:55 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
+2025-06-01 16:38:19.138 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:114 - Processando mensagem do tópico pdf_download, partição 0, offset 7
+2025-06-01 16:38:20.113 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:119 - Conteúdo da mensagem: {
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file"
+}
+2025-06-01 16:38:20.113 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:131 - Iniciando download do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:38:22.806 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:135 - PDF baixado com sucesso: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:38:27.396 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:139 - Texto extraído com sucesso do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:38:27.397 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:142 - ID gerado para o documento: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187
+2025-06-01 16:38:28.233 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:154 - Mensagem enviada para o tópico pdf_baixado: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:38:28.233 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:158 - Offset 7 commitado com sucesso
+2025-06-01 16:38:28.233 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:114 - Processando mensagem do tópico pdf_download, partição 2, offset 4
+2025-06-01 16:38:28.233 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:119 - Conteúdo da mensagem: {
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file"
+}
+2025-06-01 16:38:28.233 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:131 - Iniciando download do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:29.357 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:135 - PDF baixado com sucesso: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:30.913 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:116 - Processando mensagem do tópico pdf_baixado, partição 2, offset 14
+2025-06-01 16:38:31.708 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:121 - Conteúdo da mensagem: {
+  "id": "8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187",
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file",
+  "text": "[...texto omitido...]"
+}
+2025-06-01 16:38:31.709 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:136 - Iniciando processamento de chunks para documento ID: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187, URL: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:38:31.709 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:89 - Iniciando divisão do texto em chunks. Tamanho do texto: 163702 caracteres
+2025-06-01 16:38:31.713 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:94 - Texto dividido em 210 chunks com sucesso
+2025-06-01 16:38:31.713 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 1: 945 caracteres
+2025-06-01 16:38:31.713 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 2: 977 caracteres
+2025-06-01 16:38:31.713 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 3: 962 caracteres
+2025-06-01 16:38:31.713 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 4: 664 caracteres
+2025-06-01 16:38:31.713 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 5: 917 caracteres
+2025-06-01 16:38:31.713 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 6: 966 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 7: 907 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 8: 878 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 9: 928 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 10: 917 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 11: 986 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 12: 938 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 13: 965 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 14: 943 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 15: 906 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 16: 995 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 17: 401 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 18: 895 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 19: 982 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 20: 941 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 21: 986 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 22: 976 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 23: 945 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 24: 874 caracteres
+2025-06-01 16:38:31.714 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 25: 938 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 26: 886 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 27: 891 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 28: 906 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 29: 970 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 30: 937 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 31: 923 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 32: 912 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 33: 883 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 34: 916 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 35: 954 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 36: 980 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 37: 945 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 38: 883 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 39: 916 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 40: 941 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 41: 911 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 42: 948 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 43: 985 caracteres
+2025-06-01 16:38:31.715 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 44: 987 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 45: 990 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 46: 913 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 47: 893 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 48: 963 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 49: 382 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 50: 884 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 51: 986 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 52: 986 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 53: 993 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 54: 919 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 55: 950 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 56: 916 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 57: 925 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 58: 991 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 59: 981 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 60: 916 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 61: 960 caracteres
+2025-06-01 16:38:31.716 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 62: 995 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 63: 957 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 64: 988 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 65: 954 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 66: 965 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 67: 988 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 68: 879 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 69: 946 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 70: 986 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 71: 945 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 72: 970 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 73: 997 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 74: 955 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 75: 964 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 76: 880 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 77: 891 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 78: 966 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 79: 958 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 80: 949 caracteres
+2025-06-01 16:38:31.717 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 81: 900 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 82: 924 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 83: 902 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 84: 963 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 85: 949 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 86: 895 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 87: 307 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 88: 937 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 89: 944 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 90: 886 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 91: 964 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 92: 992 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 93: 986 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 94: 972 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 95: 955 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 96: 908 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 97: 978 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 98: 913 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 99: 973 caracteres
+2025-06-01 16:38:31.718 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 100: 991 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 101: 648 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 102: 967 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 103: 891 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 104: 606 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 105: 899 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 106: 983 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 107: 571 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 108: 987 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 109: 988 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 110: 996 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 111: 893 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 112: 717 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 113: 973 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 114: 994 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 115: 988 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 116: 827 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 117: 973 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 118: 987 caracteres
+2025-06-01 16:38:31.719 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 119: 915 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 120: 766 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 121: 979 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 122: 926 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 123: 944 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 124: 396 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 125: 972 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 126: 976 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 127: 955 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 128: 896 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 129: 965 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 130: 233 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 131: 987 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 132: 952 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 133: 974 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 134: 255 caracteres
+2025-06-01 16:38:31.720 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 135: 940 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 136: 478 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 137: 972 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 138: 944 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 139: 994 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 140: 965 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 141: 959 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 142: 966 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 143: 997 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 144: 998 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 145: 984 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 146: 959 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 147: 981 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 148: 987 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 149: 978 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 150: 991 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 151: 978 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 152: 927 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 153: 996 caracteres
+2025-06-01 16:38:31.721 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 154: 964 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 155: 991 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 156: 958 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 157: 980 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 158: 954 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 159: 984 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 160: 991 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 161: 930 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 162: 994 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 163: 977 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 164: 922 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 165: 904 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 166: 965 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 167: 972 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 168: 918 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 169: 959 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 170: 924 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 171: 997 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 172: 702 caracteres
+2025-06-01 16:38:31.722 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 173: 988 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 174: 861 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 175: 961 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 176: 841 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 177: 946 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 178: 972 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 179: 979 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 180: 957 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 181: 994 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 182: 931 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 183: 981 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 184: 988 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 185: 992 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 186: 980 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 187: 975 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 188: 986 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 189: 951 caracteres
+2025-06-01 16:38:31.723 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 190: 970 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 191: 953 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 192: 946 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 193: 952 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 194: 953 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 195: 266 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 196: 992 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 197: 899 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 198: 413 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 199: 994 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 200: 995 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 201: 972 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 202: 960 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 203: 986 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 204: 799 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 205: 986 caracteres
+2025-06-01 16:38:31.724 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 206: 883 caracteres
+2025-06-01 16:38:31.725 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 207: 980 caracteres
+2025-06-01 16:38:31.725 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 208: 992 caracteres
+2025-06-01 16:38:31.725 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 209: 986 caracteres
+2025-06-01 16:38:31.725 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 210: 617 caracteres
+2025-06-01 16:38:31.725 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:140 - Texto dividido em 210 chunks para documento ID: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187
+2025-06-01 16:38:31.754 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:139 - Texto extraído com sucesso do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:31.754 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:142 - ID gerado para o documento: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5
+2025-06-01 16:38:31.755 | DEBUG    | pdf_processor.pdf_processor.pdf_processor:delivery_report:187 - Mensagem entregue: pdf_baixado [2]
+2025-06-01 16:38:31.755 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:154 - Mensagem enviada para o tópico pdf_baixado: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:31.755 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:158 - Offset 4 commitado com sucesso
+2025-06-01 16:38:31.755 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:114 - Processando mensagem do tópico pdf_download, partição 1, offset 5
+2025-06-01 16:38:31.755 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:119 - Conteúdo da mensagem: {
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file"
+}
+2025-06-01 16:38:31.755 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:131 - Iniciando download do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:32.524 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:162 - Mensagens enviadas para o tópico pdf_chunks: 210 chunks do documento ID: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187
+2025-06-01 16:38:32.524 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:168 - Offset 14 commitado com sucesso
+2025-06-01 16:38:32.571 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:135 - PDF baixado com sucesso: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:33.242 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:116 - Processando mensagem do tópico pdf_baixado, partição 0, offset 20
+2025-06-01 16:38:33.242 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:121 - Conteúdo da mensagem: {
+  "id": "01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5",
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file",
+  "text": "[...texto omitido...]"
+}
+2025-06-01 16:38:33.242 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:136 - Iniciando processamento de chunks para documento ID: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5, URL: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:33.242 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:89 - Iniciando divisão do texto em chunks. Tamanho do texto: 93646 caracteres
+2025-06-01 16:38:33.244 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:94 - Texto dividido em 117 chunks com sucesso
+2025-06-01 16:38:33.244 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 1: 983 caracteres
+2025-06-01 16:38:33.244 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 2: 968 caracteres
+2025-06-01 16:38:33.244 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 3: 958 caracteres
+2025-06-01 16:38:33.244 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 4: 546 caracteres
+2025-06-01 16:38:33.244 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 5: 984 caracteres
+2025-06-01 16:38:33.244 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 6: 975 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 7: 920 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 8: 877 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 9: 950 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 10: 981 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 11: 997 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 12: 884 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 13: 998 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 14: 938 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 15: 974 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 16: 976 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 17: 904 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 18: 900 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 19: 916 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 20: 969 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 21: 962 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 22: 907 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 23: 942 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 24: 945 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 25: 995 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 26: 991 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 27: 923 caracteres
+2025-06-01 16:38:33.245 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 28: 965 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 29: 887 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 30: 933 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 31: 927 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 32: 959 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 33: 951 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 34: 890 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 35: 978 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 36: 974 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 37: 934 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 38: 923 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 39: 943 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 40: 895 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 41: 919 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 42: 974 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 43: 873 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 44: 991 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 45: 948 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 46: 947 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 47: 933 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 48: 997 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 49: 973 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 50: 975 caracteres
+2025-06-01 16:38:33.246 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 51: 925 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 52: 877 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 53: 878 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 54: 929 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 55: 948 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 56: 932 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 57: 895 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 58: 985 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 59: 899 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 60: 987 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 61: 987 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 62: 971 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 63: 993 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 64: 992 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 65: 936 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 66: 969 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 67: 978 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 68: 972 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 69: 931 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 70: 985 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 71: 964 caracteres
+2025-06-01 16:38:33.247 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 72: 956 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 73: 940 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 74: 962 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 75: 902 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 76: 926 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 77: 982 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 78: 934 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 79: 941 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 80: 920 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 81: 917 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 82: 904 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 83: 970 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 84: 923 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 85: 988 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 86: 918 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 87: 945 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 88: 916 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 89: 915 caracteres
+2025-06-01 16:38:33.248 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 90: 910 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 91: 933 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 92: 957 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 93: 987 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 94: 979 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 95: 891 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 96: 913 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 97: 943 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 98: 963 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 99: 994 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 100: 907 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 101: 987 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 102: 954 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 103: 971 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 104: 862 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 105: 961 caracteres
+2025-06-01 16:38:33.249 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 106: 971 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 107: 977 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 108: 982 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 109: 987 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 110: 970 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 111: 908 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 112: 929 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 113: 934 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 114: 912 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 115: 957 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 116: 889 caracteres
+2025-06-01 16:38:33.250 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 117: 590 caracteres
+2025-06-01 16:38:33.250 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:140 - Texto dividido em 117 chunks para documento ID: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5
+2025-06-01 16:38:33.253 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:162 - Mensagens enviadas para o tópico pdf_chunks: 117 chunks do documento ID: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5
+2025-06-01 16:38:33.253 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:168 - Offset 20 commitado com sucesso
+2025-06-01 16:38:34.727 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:139 - Texto extraído com sucesso do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:34.727 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:142 - ID gerado para o documento: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5
+2025-06-01 16:38:34.728 | DEBUG    | pdf_processor.pdf_processor.pdf_processor:delivery_report:187 - Mensagem entregue: pdf_baixado [0]
+2025-06-01 16:38:34.728 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:154 - Mensagem enviada para o tópico pdf_baixado: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:34.728 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:158 - Offset 5 commitado com sucesso
+2025-06-01 16:38:35.369 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:116 - Processando mensagem do tópico pdf_baixado, partição 0, offset 21
+2025-06-01 16:38:35.369 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:121 - Conteúdo da mensagem: {
+  "id": "01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5",
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file",
+  "text": "[...texto omitido...]"
+}
+2025-06-01 16:38:35.369 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:136 - Iniciando processamento de chunks para documento ID: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5, URL: https://www.gov.br/saude/pt-br/assuntos/pcdt/p/profilaxia-primaria-em-caso-de-hemofilia-grave-protocolo-de-uso/@@download/file
+2025-06-01 16:38:35.369 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:89 - Iniciando divisão do texto em chunks. Tamanho do texto: 93646 caracteres
+2025-06-01 16:38:35.372 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:94 - Texto dividido em 117 chunks com sucesso
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 1: 983 caracteres
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 2: 968 caracteres
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 3: 958 caracteres
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 4: 546 caracteres
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 5: 984 caracteres
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 6: 975 caracteres
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 7: 920 caracteres
+2025-06-01 16:38:35.372 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 8: 877 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 9: 950 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 10: 981 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 11: 997 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 12: 884 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 13: 998 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 14: 938 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 15: 974 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 16: 976 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 17: 904 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 18: 900 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 19: 916 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 20: 969 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 21: 962 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 22: 907 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 23: 942 caracteres
+2025-06-01 16:38:35.373 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 24: 945 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 25: 995 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 26: 991 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 27: 923 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 28: 965 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 29: 887 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 30: 933 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 31: 927 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 32: 959 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 33: 951 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 34: 890 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 35: 978 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 36: 974 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 37: 934 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 38: 923 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 39: 943 caracteres
+2025-06-01 16:38:35.374 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 40: 895 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 41: 919 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 42: 974 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 43: 873 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 44: 991 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 45: 948 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 46: 947 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 47: 933 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 48: 997 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 49: 973 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 50: 975 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 51: 925 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 52: 877 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 53: 878 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 54: 929 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 55: 948 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 56: 932 caracteres
+2025-06-01 16:38:35.375 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 57: 895 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 58: 985 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 59: 899 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 60: 987 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 61: 987 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 62: 971 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 63: 993 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 64: 992 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 65: 936 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 66: 969 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 67: 978 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 68: 972 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 69: 931 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 70: 985 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 71: 964 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 72: 956 caracteres
+2025-06-01 16:38:35.376 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 73: 940 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 74: 962 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 75: 902 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 76: 926 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 77: 982 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 78: 934 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 79: 941 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 80: 920 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 81: 917 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 82: 904 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 83: 970 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 84: 923 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 85: 988 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 86: 918 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 87: 945 caracteres
+2025-06-01 16:38:35.377 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 88: 916 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 89: 915 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 90: 910 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 91: 933 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 92: 957 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 93: 987 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 94: 979 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 95: 891 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 96: 913 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 97: 943 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 98: 963 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 99: 994 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 100: 907 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 101: 987 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 102: 954 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 103: 971 caracteres
+2025-06-01 16:38:35.378 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 104: 862 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 105: 961 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 106: 971 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 107: 977 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 108: 982 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 109: 987 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 110: 970 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 111: 908 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 112: 929 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 113: 934 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 114: 912 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 115: 957 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 116: 889 caracteres
+2025-06-01 16:38:35.379 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 117: 590 caracteres
+2025-06-01 16:38:35.379 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:140 - Texto dividido em 117 chunks para documento ID: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.380 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.381 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.382 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.383 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.384 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.385 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [0]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.386 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.387 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.388 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.389 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.390 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.391 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [1]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.392 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.393 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.394 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.395 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.396 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.397 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.398 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:delivery_report:194 - Mensagem entregue: pdf_chunks [2]
+2025-06-01 16:38:35.401 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:162 - Mensagens enviadas para o tópico pdf_chunks: 117 chunks do documento ID: 01df04dfda0da8cffd007429a41404221aaaea2c8804517e9a8540170fba76f5
+2025-06-01 16:38:35.401 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:168 - Offset 21 commitado com sucesso
+2025-06-01 16:39:21.125 | INFO     | __main__:signal_handler:39 - Sinal de encerramento recebido. Aguardando processos...
+2025-06-01 16:39:21.464 | INFO     | __main__:signal_handler:53 - Aplicação encerrada.
+2025-06-01 16:49:41.405 | INFO     | __main__:main:61 - Iniciando aplicação...
+2025-06-01 16:49:41.406 | INFO     | __main__:main:72 - Iniciando processadores e API...
+2025-06-01 16:49:42.848 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:191 - Iniciando processador de PDFs...
+2025-06-01 16:49:42.849 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:__init__:34 - Modelo Gemini e Text Splitter configurados
+2025-06-01 16:49:42.849 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:198 - Iniciando processador de chunks...
+2025-06-01 16:49:42.969 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:55 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
+2025-06-01 16:49:42.969 | INFO     | pdf_processor.pdf_processor.pdf_processor:consumer:39 - Consumer Kafka inicializado e inscrito no tópico pdf_download
+2025-06-01 16:50:50.843 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:114 - Processando mensagem do tópico pdf_download, partição 0, offset 8
+2025-06-01 16:50:51.668 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:119 - Conteúdo da mensagem: {
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file"
+}
+2025-06-01 16:50:51.668 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:131 - Iniciando download do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:50:53.405 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:135 - PDF baixado com sucesso: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:50:57.343 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:139 - Texto extraído com sucesso do PDF: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:50:57.343 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:142 - ID gerado para o documento: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187
+2025-06-01 16:50:58.150 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:154 - Mensagem enviada para o tópico pdf_baixado: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:50:58.151 | INFO     | pdf_processor.pdf_processor.pdf_processor:process_message:158 - Offset 8 commitado com sucesso
+2025-06-01 16:51:00.936 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:116 - Processando mensagem do tópico pdf_baixado, partição 2, offset 15
+2025-06-01 16:51:01.915 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:121 - Conteúdo da mensagem: {
+  "id": "8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187",
+  "url": "https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file",
+  "text": "[...texto omitido...]"
+}
+2025-06-01 16:51:01.915 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:136 - Iniciando processamento de chunks para documento ID: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187, URL: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file
+2025-06-01 16:51:01.915 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:89 - Iniciando divisão do texto em chunks. Tamanho do texto: 163702 caracteres
+2025-06-01 16:51:01.921 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:94 - Texto dividido em 210 chunks com sucesso
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 1: 945 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 2: 977 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 3: 962 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 4: 664 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 5: 917 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 6: 966 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 7: 907 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 8: 878 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 9: 928 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 10: 917 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 11: 986 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 12: 938 caracteres
+2025-06-01 16:51:01.921 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 13: 965 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 14: 943 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 15: 906 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 16: 995 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 17: 401 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 18: 895 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 19: 982 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 20: 941 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 21: 986 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 22: 976 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 23: 945 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 24: 874 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 25: 938 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 26: 886 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 27: 891 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 28: 906 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 29: 970 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 30: 937 caracteres
+2025-06-01 16:51:01.922 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 31: 923 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 32: 912 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 33: 883 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 34: 916 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 35: 954 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 36: 980 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 37: 945 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 38: 883 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 39: 916 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 40: 941 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 41: 911 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 42: 948 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 43: 985 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 44: 987 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 45: 990 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 46: 913 caracteres
+2025-06-01 16:51:01.923 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 47: 893 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 48: 963 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 49: 382 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 50: 884 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 51: 986 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 52: 986 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 53: 993 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 54: 919 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 55: 950 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 56: 916 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 57: 925 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 58: 991 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 59: 981 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 60: 916 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 61: 960 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 62: 995 caracteres
+2025-06-01 16:51:01.924 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 63: 957 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 64: 988 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 65: 954 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 66: 965 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 67: 988 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 68: 879 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 69: 946 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 70: 986 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 71: 945 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 72: 970 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 73: 997 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 74: 955 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 75: 964 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 76: 880 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 77: 891 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 78: 966 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 79: 958 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 80: 949 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 81: 900 caracteres
+2025-06-01 16:51:01.925 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 82: 924 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 83: 902 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 84: 963 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 85: 949 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 86: 895 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 87: 307 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 88: 937 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 89: 944 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 90: 886 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 91: 964 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 92: 992 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 93: 986 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 94: 972 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 95: 955 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 96: 908 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 97: 978 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 98: 913 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 99: 973 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 100: 991 caracteres
+2025-06-01 16:51:01.926 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 101: 648 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 102: 967 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 103: 891 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 104: 606 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 105: 899 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 106: 983 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 107: 571 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 108: 987 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 109: 988 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 110: 996 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 111: 893 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 112: 717 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 113: 973 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 114: 994 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 115: 988 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 116: 827 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 117: 973 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 118: 987 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 119: 915 caracteres
+2025-06-01 16:51:01.927 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 120: 766 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 121: 979 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 122: 926 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 123: 944 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 124: 396 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 125: 972 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 126: 976 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 127: 955 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 128: 896 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 129: 965 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 130: 233 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 131: 987 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 132: 952 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 133: 974 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 134: 255 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 135: 940 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 136: 478 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 137: 972 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 138: 944 caracteres
+2025-06-01 16:51:01.928 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 139: 994 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 140: 965 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 141: 959 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 142: 966 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 143: 997 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 144: 998 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 145: 984 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 146: 959 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 147: 981 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 148: 987 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 149: 978 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 150: 991 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 151: 978 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 152: 927 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 153: 996 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 154: 964 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 155: 991 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 156: 958 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 157: 980 caracteres
+2025-06-01 16:51:01.929 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 158: 954 caracteres
+2025-06-01 16:51:01.930 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 159: 984 caracteres
+2025-06-01 16:51:01.930 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 160: 991 caracteres
+2025-06-01 16:51:01.930 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 161: 930 caracteres
+2025-06-01 16:51:01.930 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 162: 994 caracteres
+2025-06-01 16:51:01.930 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 163: 977 caracteres
+2025-06-01 16:51:01.930 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 164: 922 caracteres
+2025-06-01 16:51:01.930 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 165: 904 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 166: 965 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 167: 972 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 168: 918 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 169: 959 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 170: 924 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 171: 997 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 172: 702 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 173: 988 caracteres
+2025-06-01 16:51:01.931 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 174: 861 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 175: 961 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 176: 841 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 177: 946 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 178: 972 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 179: 979 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 180: 957 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 181: 994 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 182: 931 caracteres
+2025-06-01 16:51:01.932 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 183: 981 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 184: 988 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 185: 992 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 186: 980 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 187: 975 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 188: 986 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 189: 951 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 190: 970 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 191: 953 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 192: 946 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 193: 952 caracteres
+2025-06-01 16:51:01.933 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 194: 953 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 195: 266 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 196: 992 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 197: 899 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 198: 413 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 199: 994 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 200: 995 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 201: 972 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 202: 960 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 203: 986 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 204: 799 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 205: 986 caracteres
+2025-06-01 16:51:01.934 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 206: 883 caracteres
+2025-06-01 16:51:01.936 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 207: 980 caracteres
+2025-06-01 16:51:01.936 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 208: 992 caracteres
+2025-06-01 16:51:01.936 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 209: 986 caracteres
+2025-06-01 16:51:01.936 | DEBUG    | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:split_text_into_chunks:96 - Chunk 210: 617 caracteres
+2025-06-01 16:51:01.936 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:140 - Texto dividido em 210 chunks para documento ID: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187
+2025-06-01 16:51:02.825 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:162 - Mensagens enviadas para o tópico pdf_chunks: 210 chunks do documento ID: 8b602df3f75b6ec2cf2336b371225659294c3d035b8c2eb8a480680e5fcd6187
+2025-06-01 16:51:02.826 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:process_message:168 - Offset 15 commitado com sucesso
+2025-06-01 16:51:29.373 | INFO     | __main__:signal_handler:39 - Sinal de encerramento recebido. Aguardando processos...
+2025-06-01 16:51:29.707 | INFO     | __main__:signal_handler:53 - Aplicação encerrada.
+2025-06-01 18:16:53.866 | INFO     | __main__:main:61 - Iniciando aplicação...
+2025-06-01 18:16:53.866 | INFO     | __main__:main:72 - Iniciando processadores e API...
+2025-06-01 18:16:55.356 | INFO     | pdf_processor.pdf_processor.pdf_processor:run:191 - Iniciando processador de PDFs...
+2025-06-01 18:16:55.359 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:__init__:22 - Modelo Gemini e Text Splitter configurados
+2025-06-01 18:16:55.360 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:run:201 - Iniciando processador de chunks...
+2025-06-01 18:16:55.520 | INFO     | extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor:consumer:43 - Consumer Kafka inicializado e inscrito no tópico pdf_baixado
+2025-06-01 18:16:55.520 | INFO     | pdf_processor.pdf_processor.pdf_processor:consumer:39 - Consumer Kafka inicializado e inscrito no tópico pdf_download
+2025-06-01 18:17:13.791 | INFO     | __main__:signal_handler:39 - Sinal de encerramento recebido. Aguardando processos...
+2025-06-01 18:17:14.172 | INFO     | __main__:signal_handler:53 - Aplicação encerrada.

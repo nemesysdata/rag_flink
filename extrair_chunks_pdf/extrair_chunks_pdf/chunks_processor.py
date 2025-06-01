@@ -17,19 +17,7 @@ class ChunksProcessor:
         self.topics = KafkaTopics.get_chunks_processor_topics()
 
         # Configuração do LangChain e Gemini
-        self.llm = ChatGoogleGenerativeAI(
-            model="gemini-pro",
-            google_api_key=os.getenv('GOOGLE_API_KEY'),
-            temperature=0
-        )
-        
-        # Configuração do Text Splitter
-        self.text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000,  # Tamanho padrão do chunk
-            chunk_overlap=200,  # Overlap reduzido para ser menor que o chunk_size
-            length_function=len,
-            is_separator_regex=False
-        )
+        self.setup_langchain()
         
         logger.info("Modelo Gemini e Text Splitter configurados")
 
@@ -82,6 +70,21 @@ class ChunksProcessor:
         if self._string_serializer is None:
             self._string_serializer = self.kafka_config.create_string_serializer()
         return self._string_serializer
+
+    def setup_langchain(self) -> None:
+        """Configura os componentes do LangChain para divisão de texto."""
+        self.text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=int(os.getenv('CHUNK_SIZE', '4096')),
+            chunk_overlap=int(os.getenv('CHUNK_OVERLAP', '1024')),
+            length_function=len,
+            is_separator_regex=False
+        )
+
+        self.llm = ChatGoogleGenerativeAI(
+            model="gemini-pro",
+            google_api_key=os.getenv('GOOGLE_API_KEY'),
+            temperature=0.7
+        )
 
     def split_text_into_chunks(self, text: str) -> List[str]:
         """Divide o texto em chunks usando o LangChain"""
