@@ -1,6 +1,8 @@
 import os
 import logging
 import multiprocessing
+import signal
+import time
 from dotenv import load_dotenv
 from pdf_processor.pdf_processor.pdf_processor import PDFProcessor
 from extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor import ChunksProcessor
@@ -30,27 +32,51 @@ def run_chunks_processor():
 
 def main():
     """Função principal que inicia todos os processos."""
+    processes = []
+    
+    def signal_handler(signum, frame):
+        """Manipulador de sinal para encerramento graceful."""
+        logger.info("Sinal de encerramento recebido. Aguardando processos...")
+        
+        # Aguarda um tempo limitado para os processos encerrarem
+        for process in processes:
+            if process.is_alive():
+                process.terminate()
+        
+        # Aguarda até 5 segundos para os processos encerrarem
+        for process in processes:
+            process.join(timeout=5)
+            if process.is_alive():
+                logger.warning(f"Processo {process.name} não encerrou. Forçando encerramento...")
+                process.kill()
+        
+        logger.info("Aplicação encerrada.")
+        os._exit(0)
+    
     try:
+        # Registra o manipulador de sinal
+        signal.signal(signal.SIGINT, signal_handler)
+        signal.signal(signal.SIGTERM, signal_handler)
+        
         logger.info("Iniciando aplicação...")
         
         # Cria os processos
-        api_process = multiprocessing.Process(target=run_api)
-        pdf_process = multiprocessing.Process(target=run_pdf_processor)
-        chunks_process = multiprocessing.Process(target=run_chunks_processor)
+        api_process = multiprocessing.Process(target=run_api, name="FastAPI")
+        pdf_process = multiprocessing.Process(target=run_pdf_processor, name="PDFProcessor")
+        chunks_process = multiprocessing.Process(target=run_chunks_processor, name="ChunksProcessor")
+        
+        # Adiciona os processos à lista
+        processes.extend([api_process, pdf_process, chunks_process])
         
         # Inicia os processos
         logger.info("Iniciando processadores e API...")
-        api_process.start()
-        pdf_process.start()
-        chunks_process.start()
+        for process in processes:
+            process.start()
         
         # Aguarda os processos
-        api_process.join()
-        pdf_process.join()
-        chunks_process.join()
-        
-    except KeyboardInterrupt:
-        logger.info("Encerrando aplicação...")
+        for process in processes:
+            process.join()
+            
     except Exception as e:
         logger.error(f"Erro fatal na aplicação: {str(e)}", exc_info=True)
         raise
