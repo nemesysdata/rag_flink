@@ -1,16 +1,16 @@
 import logging
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
+from shared import setup_logging
 
-logger = logging.getLogger(__name__)
+# Configuração de logging
+logger = setup_logging()
 
-# Cria a aplicação FastAPI
+# Inicializa o FastAPI
 app = FastAPI(
-    title="PDF Processing Pipeline",
-    description="API para monitoramento do pipeline de processamento de PDFs",
-    version="1.0.0",
-    docs_url=None,  # Desabilita Swagger UI
-    redoc_url=None  # Desabilita ReDoc
+    title="RAG Flink API",
+    description="API para monitoramento e health check dos serviços de processamento de PDFs",
+    version="1.0.0"
 )
 
 # Configuração de CORS
@@ -23,15 +23,24 @@ app.add_middleware(
 )
 
 @app.get("/health")
-async def health_check():
-    """Endpoint de health check"""
-    return {"status": "healthy"}
+async def health_check() -> Response:
+    """Endpoint de health check para todos os serviços.
+    
+    Returns:
+        Response: Resposta HTTP 200 OK se todos os serviços estiverem saudáveis.
+    """
+    logger.info("Health check realizado com sucesso")
+    return Response(status_code=200)
 
 @app.get("/")
-async def root():
-    """Endpoint raiz"""
+async def root() -> dict:
+    """Endpoint raiz que retorna informações básicas da API.
+    
+    Returns:
+        dict: Dicionário com informações da API.
+    """
     return {
-        "name": "PDF Processing Pipeline",
+        "message": "RAG Flink API",
         "version": "1.0.0",
-        "status": "running"
+        "status": "online"
     } 

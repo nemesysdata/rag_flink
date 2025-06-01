@@ -11,18 +11,30 @@ from pdf_processor.pdf_processor.pdf_processor import PDFProcessor
 from extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor import ChunksProcessor
 from api_server import app
 
-def run_pdf_processor():
-    """Executa o processador de PDFs"""
+def run_pdf_processor() -> None:
+    """Inicia o processador de PDFs em uma thread separada.
+    
+    O processador monitora o tópico 'pdf_download' para URLs de PDFs,
+    faz o download e extrai o texto dos documentos.
+    """
     processor = PDFProcessor()
     processor.run()
 
-def run_chunks_processor():
-    """Executa o processador de chunks"""
+def run_chunks_processor() -> None:
+    """Inicia o processador de chunks em uma thread separada.
+    
+    O processador monitora o tópico 'pdf_baixado' para textos extraídos,
+    divide em chunks e publica no tópico 'pdf_chunks'.
+    """
     processor = ChunksProcessor()
     processor.run()
 
-def run_fastapi():
-    """Executa o servidor FastAPI"""
+def run_fastapi() -> None:
+    """Inicia o servidor FastAPI em uma thread separada.
+    
+    O servidor fornece endpoints de health check e monitoramento
+    para todos os serviços da aplicação.
+    """
     uvicorn.run(
         app,
         host="0.0.0.0",
@@ -30,7 +42,16 @@ def run_fastapi():
         log_level="info"
     )
 
-def main():
+def main() -> None:
+    """Função principal que inicializa e coordena todos os serviços.
+    
+    Inicia três threads separadas:
+    - Processador de PDFs
+    - Processador de chunks
+    - Servidor FastAPI
+    
+    Gerencia o ciclo de vida das threads e tratamento de exceções.
+    """
     # Configura o logging
     logger = setup_logging()
     logger.info("Iniciando aplicação...")
