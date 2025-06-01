@@ -1,6 +1,7 @@
 import os
 import json
 import uuid
+import time
 from typing import Dict, Any, List
 from confluent_kafka import KafkaError
 from confluent_kafka.serialization import SerializationContext, MessageField
@@ -201,15 +202,30 @@ class ChunksProcessor:
         logger.info("Iniciando processador de chunks...")
         try:
             while True:
-                msg = self.consumer.poll(1.0)
-                if msg is None:
-                    continue
-                self.process_message(msg)
-                self.producer.poll(0)
+                try:
+                    msg = self.consumer.poll(1.0)
+                    if msg is None:
+                        continue
+                    self.process_message(msg)
+                    self.producer.poll(0)
+                except Exception as e:
+                    logger.error(f"Erro ao processar mensagem: {str(e)}")
+                    # Tenta reconectar ao Kafka
+                    try:
+                        self.consumer.close()
+                        self._consumer = None
+                        logger.info("Tentando reconectar ao Kafka...")
+                        time.sleep(5)  # Espera 5 segundos antes de tentar novamente
+                    except Exception as reconnect_error:
+                        logger.error(f"Erro ao tentar reconectar: {str(reconnect_error)}")
+                        time.sleep(10)  # Espera mais tempo se falhar
         except KeyboardInterrupt:
             logger.info("Encerrando processador de chunks...")
         finally:
             logger.info("Fechando conexões...")
-            self.consumer.close()
-            self.producer.flush()
-            logger.info("Conexões fechadas") 
+            try:
+                self.consumer.close()
+                self.producer.flush()
+                logger.info("Conexões fechadas com sucesso")
+            except Exception as e:
+                logger.error(f"Erro ao fechar conexões: {str(e)}") 

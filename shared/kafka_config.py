@@ -73,7 +73,11 @@ class KafkaConfig:
             'auto.commit.interval.ms': 5000,  # Commit a cada 5 segundos
             'client.id': f'kafka-client-{uuid.uuid4()}',
             'heartbeat.interval.ms': 3000,  # Envia heartbeat a cada 3 segundos
-            'session.timeout.ms': 10000  # Timeout de 10 segundos
+            'session.timeout.ms': 10000,  # Timeout de 10 segundos
+            'max.poll.interval.ms': 300000,  # 5 minutos para processar mensagem
+            'request.timeout.ms': 30000,  # 30 segundos para requisições
+            'socket.timeout.ms': 30000,  # 30 segundos para socket
+            'connections.max.idle.ms': 540000  # 9 minutos para conexões ociosas
         }
 
     def get_producer_config(self) -> Dict[str, Any]:
