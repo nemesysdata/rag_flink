@@ -23,14 +23,8 @@ app.add_middleware(
 )
 
 @app.get("/health")
-async def health_check() -> Response:
-    """Endpoint de health check para todos os serviços.
-    
-    Returns:
-        Response: Resposta HTTP 200 OK se todos os serviços estiverem saudáveis.
-    """
-    logger.info("Health check realizado com sucesso")
-    return Response(status_code=200)
+async def health_check():
+    return {"healthy": "ok"}
 
 @app.get("/")
 async def root() -> dict:
