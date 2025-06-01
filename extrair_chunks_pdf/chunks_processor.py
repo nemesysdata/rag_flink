@@ -111,10 +111,6 @@ class ChunksProcessor:
                 error = msg.error()
                 logger.error(f"Erro na mensagem Kafka: {error}")
                 logger.error(f"Detalhes do erro: código={error.code()}, nome={error.name()}, descrição={error.str()}")
-                # Obtém o group_id da configuração
-                group_id = self.kafka_config.get_kafka_config().get('group.id', 'unknown')
-                client_id = self.kafka_config.get_kafka_config().get('client.id', 'unknown')
-                logger.error(f"Configurações atuais: group.id={group_id}, client.id={client_id}")
                 return
 
             logger.info(f"Processando mensagem do tópico {msg.topic()}, partição {msg.partition()}, offset {msg.offset()}")
@@ -167,6 +163,10 @@ class ChunksProcessor:
                 else:
                     logger.error(f"Falha ao dividir texto em chunks para documento ID: {doc_id}")
                     
+                # Commit do offset após processamento bem-sucedido
+                self.consumer.commit(msg)
+                logger.info(f"Offset {msg.offset()} commitado com sucesso")
+                
             except Exception as e:
                 logger.error(f"Erro ao processar chunks para documento ID {doc_id}: {str(e)}")
                 # Envia erro para o tópico de erros usando o serializer de string

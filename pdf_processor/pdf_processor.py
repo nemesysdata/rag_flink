@@ -152,6 +152,10 @@ class PDFProcessor:
                         )
                         self.producer.poll(0)
                         logger.info(f"Mensagem enviada para o tópico {self.topics['output']}: {pdf_url}")
+                        
+                        # Commit do offset após processamento bem-sucedido
+                        self.consumer.commit(msg)
+                        logger.info(f"Offset {msg.offset()} commitado com sucesso")
                     else:
                         logger.error(f"Falha ao extrair texto do PDF: {pdf_url}")
                 else:
