@@ -2,7 +2,8 @@
 name = "rag-flink"
 version = "0.1.0"
 description = "RAG Flink Project"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Fernando Adriano Machado <adriano@techrom.co>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -21,6 +22,7 @@ PyPDF2 = "^3.0.1"
 requests = "^2.31.0"
 authlib = "^1.3.0"
 fastavro = "^1.8.0"
+pymilvus = "^2.3.6"
 
 [build-system]
 requires = ["poetry-core"]
