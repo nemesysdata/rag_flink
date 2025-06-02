@@ -1,8 +1,0 @@
----
-description: 
-globs: 
-alwaysApply: false
----
-# Aprovação obrigatória para merge, PR e push
-
-Nunca realize merge, pull request (PR) ou push para qualquer branch sem autorização expressa do usuário. Todas as operações de integração de código devem ser previamente aprovadas pelo responsável do projeto.

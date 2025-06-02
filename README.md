@@ -17,6 +17,10 @@ rag_flink/
 │   │   ├── __init__.py
 │   │   └── chunks_processor.py # Lógica de processamento e ponto de entrada
 │   │   └── schemas/       # Schemas Avro
+├── milvus_sink/          # Serviço de persistência no Milvus
+│   ├── milvus_sink/      # Módulo do sink
+│   │   ├── __init__.py
+│   │   └── milvus_sink.py # Lógica de persistência
 ├── shared/                # Módulos compartilhados
 │   ├── __init__.py
 │   ├── kafka_config.py    # Configuração do Kafka
@@ -159,6 +163,24 @@ Serviço responsável por:
 }
 ```
 
+### Milvus Sink
+
+Serviço responsável por:
+- Monitorar o tópico `pdf_embedding` para embeddings gerados
+- Persistir os embeddings no Milvus Cloud (Zilliz)
+- Manter a coleção indexada para busca por similaridade
+
+#### Estrutura da Coleção no Milvus
+
+A coleção `pdf_embeddings` possui os seguintes campos:
+- `id`: ID auto-incrementado (chave primária)
+- `pdf_id`: ID do documento PDF
+- `chunk_id`: ID do chunk
+- `text`: Texto do chunk
+- `embedding`: Vetor de embedding (1536 dimensões)
+
+A coleção é indexada usando IVF_FLAT para busca por similaridade.
+
 ### API Server
 
 Servidor FastAPI centralizado responsável por:
@@ -177,6 +199,7 @@ Servidor FastAPI centralizado responsável por:
 - Docker
 - Google Cloud Run
 - FastAPI
+- Milvus Cloud (Zilliz)
 
 #### Configuração
 
@@ -195,6 +218,12 @@ Servidor FastAPI centralizado responsável por:
    
    # Google Gemini
    GOOGLE_API_KEY=
+
+   # Milvus Cloud (Zilliz)
+   MILVUS_URI=your-instance-endpoint.zillizcloud.com
+   MILVUS_TOKEN=your-api-key
+   MILVUS_COLLECTION=pdf_embeddings
+   MILVUS_DIM=1536
    ```
 
 2. **Tópicos Kafka**:
@@ -202,6 +231,7 @@ Servidor FastAPI centralizado responsável por:
    - `pdf_baixado`: Textos extraídos dos PDFs
    - `pdf_chunks`: Chunks de texto processados
    - `pdf_errors`: Mensagens de erro
+   - `pdf_embedding`: Embeddings gerados dos chunks
 
 #### Desenvolvimento Local
 
