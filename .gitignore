@@ -45,4 +45,19 @@ logs/
 
 # OS
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Poetry
+poetry.lock
+
+# Cursor
+.cursor/ 
