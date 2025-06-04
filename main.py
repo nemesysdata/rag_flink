@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from pdf_processor.pdf_processor.pdf_processor import PDFProcessor
 from extrair_chunks_pdf.extrair_chunks_pdf.chunks_processor import ChunksProcessor
 from milvus_sink.milvus_sink.milvus_sink import MilvusSink
+from document_retriever.document_retriever.retriever import DocumentRetriever
 from api_server import app
 import uvicorn
 from shared import setup_logging
@@ -40,6 +41,12 @@ def run_milvus_sink():
     logger.info("Iniciando MilvusSink...")
     sink = MilvusSink()
     sink.run()
+
+def run_document_retriever():
+    """Executa o retriever de documentos."""
+    logger.info("Iniciando DocumentRetriever...")
+    retriever = DocumentRetriever()
+    retriever.run()
 
 def main():
     """Função principal que inicia todos os processos."""
@@ -78,9 +85,10 @@ def main():
         pdf_process = multiprocessing.Process(target=run_pdf_processor, name="PDFProcessor")
         chunks_process = multiprocessing.Process(target=run_chunks_processor, name="ChunksProcessor")
         milvus_process = multiprocessing.Process(target=run_milvus_sink, name="MilvusSink")
+        retriever_process = multiprocessing.Process(target=run_document_retriever, name="DocumentRetriever")
         
         # Adiciona os processos à lista
-        processes.extend([api_process, pdf_process, chunks_process, milvus_process])
+        processes.extend([api_process, pdf_process, chunks_process, milvus_process, retriever_process])
         
         # Inicia os processos
         logger.info("Iniciando processadores e API...")
