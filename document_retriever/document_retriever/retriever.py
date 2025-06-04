@@ -123,29 +123,54 @@ class DocumentRetriever:
             
             # Get similar documents
             documents = self._get_similar_documents(perguntas_data['embedding'])
+            self.logger.info(f"Found {len(documents) if documents else 0} similar documents")
             
             # Prepare output message
             output_data = {
                 'session_id': perguntas_data['session_id'],
                 'pergunta': perguntas_data['pergunta'],
-                'documentos': documents if documents else None
+                'documentos': None if not documents else [doc if doc else None for doc in documents]
             }
+            self.logger.info(f"Prepared output message: {output_data}")
             
             # Serialize and send message
-            self.logger.info(f"Sending response for session: {perguntas_data['session_id']}")
-            serialized_data = self.documentos_serializer(
-                output_data,
-                SerializationContext(self.documentos_topic, MessageField.VALUE)
-            )
-            self.producer.produce(
-                topic=self.documentos_topic,
-                value=serialized_data
-            )
-            self.producer.flush()
-            self.logger.info(f"Response sent successfully for session: {perguntas_data['session_id']}")
+            self.logger.info(f"Attempting to serialize message for topic {self.documentos_topic}")
+            try:
+                serialized_data = self.documentos_serializer(
+                    output_data,
+                    SerializationContext(self.documentos_topic, MessageField.VALUE)
+                )
+                self.logger.info("Message serialized successfully")
+                
+                self.logger.info(f"Attempting to produce message to topic {self.documentos_topic}")
+                self.producer.produce(
+                    topic=self.documentos_topic,
+                    value=serialized_data,
+                    callback=self.delivery_report
+                )
+                self.logger.info("Message produced successfully")
+                
+                # Poll to handle delivery reports
+                self.producer.poll(0)
+                
+                self.logger.info("Flushing producer...")
+                self.producer.flush()
+                self.logger.info("Producer flushed successfully")
+                
+                self.logger.info(f"Response sent successfully for session: {perguntas_data['session_id']}")
+            except Exception as e:
+                self.logger.error(f"Error during message serialization/production: {str(e)}", exc_info=True)
+                raise
             
         except Exception as e:
             self.logger.error(f"Error processing message: {str(e)}", exc_info=True)
+            
+    def delivery_report(self, err, msg):
+        """Callback for message delivery reports"""
+        if err is not None:
+            self.logger.error(f"Message delivery failed: {err}")
+        else:
+            self.logger.info(f"Message delivered to {msg.topic()} [{msg.partition()}]")
             
     def run(self):
         """Main processing loop."""
