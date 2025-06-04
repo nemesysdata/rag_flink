@@ -4,6 +4,7 @@ from pymilvus import connections, Collection
 import logging
 from dotenv import load_dotenv
 from shared import KafkaConfig, KafkaTopics
+from confluent_kafka.serialization import SerializationContext, MessageField
 
 class DocumentRetriever:
     def __init__(self):
@@ -13,13 +14,13 @@ class DocumentRetriever:
         
         # Kafka configuration
         self.kafka_config = KafkaConfig()
-        self.perguntas_topic = "perguntas"
+        self.perguntas_topic = "perguntas_embeddings"
         self.documentos_topic = "documentos_selecionados"
         
         # Milvus configuration
         self.milvus_uri = os.getenv("MILVUS_URI")
         self.milvus_token = os.getenv("MILVUS_TOKEN")
-        self.collection_name = os.getenv("MILVUS_COLLECTION_NAME")
+        self.collection_name = os.getenv("MILVUS_COLLECTION", "pdf_embeddings")
         
         self.logger.debug(f"Milvus URI: {self.milvus_uri}")
         self.logger.debug(f"Milvus collection: {self.collection_name}")
@@ -73,16 +74,16 @@ class DocumentRetriever:
             self.logger.error(f"Failed to initialize Milvus connection: {str(e)}")
             raise
         
-    def _get_similar_documents(self, query_text: str, k: int = 5) -> List[str]:
+    def _get_similar_documents(self, query_embedding: List[float], k: int = 5) -> List[str]:
         """Retrieve k most similar documents from Milvus."""
-        self.logger.debug(f"Searching for similar documents to query: {query_text}")
+        self.logger.info(f"Searching for similar documents using embedding vector")
         try:
             # TODO: Implement vector search logic here
             # This is a placeholder - you'll need to implement the actual vector search
             # based on your specific Milvus collection configuration
             results = self.collection.search(
-                data=[query_text],  # This needs to be properly vectorized
-                anns_field="vector",  # Adjust based on your collection schema
+                data=[query_embedding],  # Using the provided embedding vector
+                anns_field="embedding",  # Using the correct field name from MilvusSink
                 param={"metric_type": "L2", "params": {"nprobe": 10}},
                 limit=k,
                 output_fields=["text"]  # Adjust based on your collection schema
@@ -94,7 +95,7 @@ class DocumentRetriever:
                 for hit in hits:
                     documents.append(hit.entity.get('text'))
             
-            self.logger.debug(f"Found {len(documents)} similar documents")
+            self.logger.info(f"Found {len(documents)} similar documents")
             return documents
             
         except Exception as e:
@@ -104,13 +105,24 @@ class DocumentRetriever:
     def process_message(self, msg):
         """Process a single message from Kafka."""
         try:
+            if msg is None:
+                self.logger.debug("Received empty message, skipping...")
+                return
+                
+            if msg.error():
+                self.logger.error(f"Consumer error: {msg.error()}")
+                return
+                
             # Deserialize message
-            self.logger.debug("Deserializing message")
-            perguntas_data = self.perguntas_deserializer(msg.value())
+            self.logger.info(f"Received message from topic {msg.topic()}, partition {msg.partition()}, offset {msg.offset()}")
+            perguntas_data = self.perguntas_deserializer(
+                msg.value(),
+                SerializationContext(msg.topic(), MessageField.VALUE)
+            )
             self.logger.debug(f"Processing message for session: {perguntas_data['session_id']}")
             
             # Get similar documents
-            documents = self._get_similar_documents(perguntas_data['pergunta'])
+            documents = self._get_similar_documents(perguntas_data['embedding'])
             
             # Prepare output message
             output_data = {
@@ -120,17 +132,20 @@ class DocumentRetriever:
             }
             
             # Serialize and send message
-            self.logger.debug(f"Sending response for session: {perguntas_data['session_id']}")
-            serialized_data = self.documentos_serializer(output_data)
+            self.logger.info(f"Sending response for session: {perguntas_data['session_id']}")
+            serialized_data = self.documentos_serializer(
+                output_data,
+                SerializationContext(self.documentos_topic, MessageField.VALUE)
+            )
             self.producer.produce(
                 topic=self.documentos_topic,
                 value=serialized_data
             )
             self.producer.flush()
-            self.logger.debug(f"Response sent successfully for session: {perguntas_data['session_id']}")
+            self.logger.info(f"Response sent successfully for session: {perguntas_data['session_id']}")
             
         except Exception as e:
-            self.logger.error(f"Error processing message: {str(e)}")
+            self.logger.error(f"Error processing message: {str(e)}", exc_info=True)
             
     def run(self):
         """Main processing loop."""
